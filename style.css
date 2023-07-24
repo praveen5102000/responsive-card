@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.parent {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #000;
+}
+.child {
+    flex-basis: 23.6%;
+    background-color: #ccc;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    margin-top: 12px;
+    padding: 25px 10px 25px 10px;
+    box-sizing: border-box;
+    margin-bottom: 12px;
+}
+a {
+    text-decoration: none;
+    background-color: blue;
+    color: white;
+    margin: 15px 0px 0px 0px;
+    padding: 10px 10px 10px 10px;
+    display: inline-block;
+    border-radius: 10px;
+}
+img {
+    padding: 10px 0;
+    margin: 0;
+}
+h4 {
+    padding: 10px 0;
+    margin: 0;
+}
+p {
+    padding: 10px 0;
+    margin: 0;
+}
+.parent :hover {
+    background-color: aqua;
+}
+.child:hover a {
+    background-color: black;
+}
+h1{
+    text-align: center;
+    padding-bottom: 20px;
+
+}
+.main {
+    background: url(img/logo.jpg) center;
+    background-size: cover;
+    padding: 5px 5px 5px 5px;
+    margin: 22px 5px 22px 5px;
+}
+@media (max-width:1024px){
+    .parent{width: 100%;
+    flex-direction: column;}
+
+    .child{
+        margin: 5px;
+    }
+    .main{background: none;}
+}
